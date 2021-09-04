@@ -1,1 +1,50 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.carta {
+  border-radius: 15px;
+  width: 400px;
+  height: 600px;
+  margin-top: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  /*position: relative;*/
+}
+
+.palo {
+  background-color: violet;
+  /*width: fit-content;*/
+  align-self: flex-start;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.number {
+  text-align: center;
+  background-color: teal;
+  width: fit-content;
+  /*margin: auto;*/
+  align-self: center;
+}
+
+.palo2 {
+  align-self: flex-end;
+  background-color: tomato;
+  width: fit-content;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.spade {
+}
+.club {
+}
+.heart {
+}
+.diamond {
+}
