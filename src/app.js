@@ -31,12 +31,17 @@ window.onload = function() {
   let valorAleatorio = numbers[getRandom(13)];
   let paloAleatorio = palos[getRandom(4)];
   console.log(valorAleatorio, paloAleatorio);
-
   let palo1 = document.querySelector(".palo");
-  let numero = document.querySelector(".number");
+  let numero = document.querySelector(".numerito");
   let palo2 = document.querySelector(".palo2");
+  let corazon = document.querySelector(".heart");
 
-  palo1.innerHTML = paloAleatorio;
-  palo2.innerHTML = paloAleatorio;
-  numero.innerHTML = valorAleatorio;
+  if (palos[""] == "♥") {
+    corazon.innerHTML = paloAleatorio;
+    numero.innerHTML = valorAleatorio;
+  } else {
+    palo1.innerHTML = paloAleatorio;
+    palo2.innerHTML = paloAleatorio;
+    numero.innerHTML = valorAleatorio;
+  }
 };
