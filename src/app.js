@@ -10,7 +10,7 @@ window.onload = function() {
 
   let palos = ["♦", "♥", "♠", "♣"];
   let numbers = [
-    "1",
+    "A",
     "2",
     "3",
     "4",
@@ -34,10 +34,11 @@ window.onload = function() {
   let palo1 = document.querySelector(".palo");
   let numero = document.querySelector(".numerito");
   let palo2 = document.querySelector(".palo2");
-  let corazon = document.querySelector(".heart");
+  let heart = document.querySelector(".heart");
 
-  if (palos[""] == "♥") {
-    corazon.innerHTML = paloAleatorio;
+  if (palos[""] === "♥") {
+    palo1.setAttribute("heart");
+    heart.innerHTML = paloAleatorio;
     numero.innerHTML = valorAleatorio;
   } else {
     palo1.innerHTML = paloAleatorio;
