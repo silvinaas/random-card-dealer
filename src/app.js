@@ -35,10 +35,20 @@ window.onload = function() {
   let numero = document.querySelector(".numerito");
   let palo2 = document.querySelector(".palo2");
   let heart = document.querySelector(".heart");
+  let heart1 = document.querySelector(".heart1");
+  let heart2 = document.querySelector(".heart2");
 
-  if (palos[""] === "♥") {
-    palo1.setAttribute("heart");
-    heart.innerHTML = paloAleatorio;
+  if (paloAleatorio === "♥") {
+    palo1.setAttribute("class", "heart");
+    palo2.setAttribute("class", "heart");
+    heart1.innerHTML = paloAleatorio;
+    heart2.innerHTML = paloAleatorio;
+    numero.innerHTML = valorAleatorio;
+  } else if (paloAleatorio === "♦") {
+    palo1.setAttribute("class", "heart");
+    palo2.setAttribute("class", "heart");
+    heart1.innerHTML = paloAleatorio;
+    heart2.innerHTML = paloAleatorio;
     numero.innerHTML = valorAleatorio;
   } else {
     palo1.innerHTML = paloAleatorio;
