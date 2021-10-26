@@ -39,14 +39,14 @@ window.onload = function() {
   let heart2 = document.querySelector(".heart2");
 
   if (paloAleatorio === "♥") {
-    palo1.setAttribute("class", "heart");
-    palo2.setAttribute("class", "heart");
+    palo1.setAttribute("class", "palo heart");
+    palo2.setAttribute("class", "palo2 heart");
     heart1.innerHTML = paloAleatorio;
     heart2.innerHTML = paloAleatorio;
     numero.innerHTML = valorAleatorio;
   } else if (paloAleatorio === "♦") {
-    palo1.setAttribute("class", "heart");
-    palo2.setAttribute("class", "heart");
+    palo1.setAttribute("class", "palo heart");
+    palo2.setAttribute("class", "palo2 heart");
     heart1.innerHTML = paloAleatorio;
     heart2.innerHTML = paloAleatorio;
     numero.innerHTML = valorAleatorio;

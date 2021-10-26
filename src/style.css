@@ -2,7 +2,7 @@
 
 body {
   background-color: green;
-  font-size: large;
+  box-sizing: border-box;
 }
 
 .carta {
@@ -11,44 +11,41 @@ body {
   height: 600px;
   margin-top: 10px;
   margin: auto;
-  display: flex;
+  padding: 20px;
+  padding-top: 230px;
+  border: 1px solid black;
   justify-content: space-between;
   background-color: white;
-  /*position: relative;*/
+  position: relative;
+  font-size: 80px;
 }
 
 .palo {
-  background-color: violet;
+  position: absolute;
   /*width: fit-content;*/
+  top: 20px;
+  left: 20px;
   align-self: flex-start;
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 40px;
-  height: 60px;
 }
 
 .number {
   text-align: center;
-  background-color: teal;
-  width: fit-content;
   /*margin: auto;*/
   align-self: center;
-  width: 80px;
-  height: 90px;
-  font-size: medium;
+  font-size: 150px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .palo2 {
+  position: absolute;
   align-self: flex-end;
   width: fit-content;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  width: 40px;
-  height: 60px;
+  bottom: 20px;
+  right: 20px;
 }
 .numerito {
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 150px;
 }
 
 .spade {
@@ -57,12 +54,6 @@ body {
 }
 .heart {
   color: red;
-  align-self: flex-end;
-  width: fit-content;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  width: 40px;
-  height: 60px;
 }
 .diamond {
 }
